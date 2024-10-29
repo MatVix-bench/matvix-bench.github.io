@@ -189,6 +189,26 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="has-text-left" style="color: #003366; font-size: 1.5em; font-weight: bold;">
+          How do we evaluate the models that extract these structured data?
+        </h3>
+        <div class="content has-text-justified">
+          <p>
+            The evaluation consists of two main steps: first, verifying if the models correctly identify the compositions of materials within each sample, and then checking if they accurately extract the properties for each matched composition.
+          </p>
+          <p>
+            For composition alignment, we use an F1 Score to evaluate how well predicted and ground truth compositions match. For property evaluation, we use two metrics—the Curve Similarity Score (CSS) and the Curve Alignment Score (CAS)—to assess the accuracy of the extracted curves representing properties. CSS measures the similarity of each property’s curve between predictions and ground truth, while CAS evaluates how accurately multiple curves are matched within each sample.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
       <div class="column is-four-fifths has-text-centered">
         <h2 class="title is-3">Results</h2>
         <img src="static/images/results.png" alt="Results Summary" style="margin-top: 20px; max-width: 100%;">
