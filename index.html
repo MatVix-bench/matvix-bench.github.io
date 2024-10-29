@@ -141,8 +141,6 @@
         <div class="content has-text-justified">
           <p>
             Multimodal information extraction (MIE) is crucial for scientific literature, where valuable data is often spread across text, figures, and tables. In materials science, extracting structured information from research articles can accelerate the discovery of new materials. However, the multimodal nature and complex interconnections of scientific content present challenges for traditional text-based methods.
-          </p>
-          <p>
             We introduce MatViX, a benchmark consisting of 324 full-length research articles and 1,688 complex structured JSON files, curated by experts in polymer nanocomposites and biodegradation. These JSON files are extracted from text, tables, and figures, providing a comprehensive challenge for MIE. Our results demonstrate significant room for improvement in current models. 
           </p>
         </div>
@@ -150,7 +148,20 @@
     </div>
   </div>
 </section>
-
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Results</h2>
+        <img src="static/images/results.png" alt="Results Summary" style="margin-top: 20px; max-width: 100%;">
+        <p class="caption">
+  Evaluation results for predicting Compositions (P: Precision, R: Recall, F1: F1-Score) and Properties (Headers, Curves, CAS) under different configurations (Base: Baseline, T-Only: Text Only, T+Img: Text + Image). The highlighted values indicate the highest scores among the models. <span style="color: green;">(green)</span> indicates the increase in performance when using DePlot compared to its non-DePlot counterpart in the same configuration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
